@@ -1,0 +1,11 @@
+node_modules
+.next
+chain/artifacts
+chain/cache
+chain/typechain-types
+chain/coverage
+web/.data
+web/src/generated
+*.tsbuildinfo
+.env*
+!*.env.example

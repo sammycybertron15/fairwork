@@ -1,0 +1,30 @@
+{
+  "name": "fairwork",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": "20.x"
+  },
+  "workspaces": [
+    "chain",
+    "web"
+  ],
+  "scripts": {
+    "chain": "npm run node -w chain",
+    "deploy:local": "npm run deploy -w chain",
+    "seed": "npm run seed -w web",
+    "dev": "npm run dev -w web",
+    "demo": "concurrently -k \"npm run chain\" \"wait-on tcp:8545 && npm run deploy:local && npm run seed && npm run dev\"",
+    "test": "npm run test:chain && npm run test:web",
+    "test:chain": "npm run test -w chain",
+    "test:web": "npm run test -w web",
+    "lint": "npm run lint -w web && prettier --check .",
+    "typecheck": "npm run typecheck -w chain && npm run typecheck -w web",
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.0",
+    "prettier": "^3.3.0",
+    "wait-on": "^8.0.0"
+  }
+}

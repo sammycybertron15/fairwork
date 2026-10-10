@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+/* Design tokens (spec 8.4), defined once. Colors only through these; no raw hex in components. */
+@theme static {
+  --color-*: initial;
+  --color-canvas: #FAFAF2;
+  --color-ink: #080A05;
+  --color-lime: #A0C82F;
+  --color-lime-deep: #669E0A;
+  --color-stone: #AAA997;
+  --color-stone-soft: #D9D6AC;
+  --color-muted-on-light: #5A594B;
+  --color-danger: #B3412E;
+  --color-warning: #B7791F;
+
+  /* Radius scale: tags and inputs 2px, cards and buttons 6px, dashboard container 8px. */
+  --radius-*: initial;
+  --radius-tag: 2px;
+  --radius-card: 6px;
+  --radius-panel: 8px;
+
+  /* No shadows anywhere. */
+  --shadow-*: initial;
+  --drop-shadow-*: initial;
+
+  /* Type scale: 14 / 16 / 20 / 28 / 40. */
+  --text-*: initial;
+  --text-caption: 0.875rem;
+  --text-body: 1rem;
+  --text-lead: 1.25rem;
+  --text-title: 1.75rem;
+  --text-display: 2.5rem;
+
+  /* Maximum line length. */
+  --container-measure: 68ch;
+}
+
+/* Font families come from next/font CSS variables set on <html> in layout.tsx. */
+@theme inline {
+  --font-heading: var(--font-outfit), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-dm-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains-mono), ui-monospace, monospace;
+}
+
+@layer base {
+  html {
+    color-scheme: light;
+  }
+
+  body {
+    font-size: var(--text-body);
+    line-height: 1.65;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-heading font-medium;
+    line-height: 1.2;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-lime-deep);
+    outline-offset: 2px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    ::before,
+    ::after {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@layer components {
+  .btn-primary,
+  .btn-secondary,
+  .btn-destructive {
+    @apply inline-flex min-h-11 cursor-pointer items-center justify-center rounded-card border px-5 font-medium;
+  }
+
+  .btn-primary {
+    @apply border-lime bg-lime text-ink hover:border-lime-deep hover:bg-lime-deep;
+  }
+
+  .btn-secondary {
+    @apply border-ink bg-transparent text-ink;
+  }
+
+  .btn-destructive {
+    @apply border-danger bg-transparent text-danger;
+  }
+}
