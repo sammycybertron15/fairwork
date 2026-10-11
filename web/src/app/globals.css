@@ -3,15 +3,15 @@
 /* Design tokens (spec 8.4), defined once. Colors only through these; no raw hex in components. */
 @theme static {
   --color-*: initial;
-  --color-canvas: #FAFAF2;
-  --color-ink: #080A05;
-  --color-lime: #A0C82F;
-  --color-lime-deep: #669E0A;
-  --color-stone: #AAA997;
-  --color-stone-soft: #D9D6AC;
-  --color-muted-on-light: #5A594B;
-  --color-danger: #B3412E;
-  --color-warning: #B7791F;
+  --color-canvas: #fafaf2;
+  --color-ink: #080a05;
+  --color-lime: #a0c82f;
+  --color-lime-deep: #669e0a;
+  --color-stone: #aaa997;
+  --color-stone-soft: #d9d6ac;
+  --color-muted-on-light: #5a594b;
+  --color-danger: #b3412e;
+  --color-warning: #b7791f;
 
   /* Radius scale: tags and inputs 2px, cards and buttons 6px, dashboard container 8px. */
   --radius-*: initial;
@@ -93,5 +93,9 @@
 
   .btn-destructive {
     @apply border-danger bg-transparent text-danger;
+  }
+
+  .field {
+    @apply block min-h-11 w-full rounded-tag border border-muted-on-light bg-canvas px-3 py-2;
   }
 }

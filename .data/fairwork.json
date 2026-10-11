@@ -1,0 +1,148 @@
+{
+  "freelancers": [
+    {
+      "handle": "ines-varga",
+      "address": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+      "name": "Ines Varga",
+      "headline": "Brand identity and packaging design",
+      "bio": "I design logos, type systems and packaging for food and drink brands. Ten years in studios, four on my own. Every project starts with a one-page brief and ends with source files you own."
+    },
+    {
+      "handle": "tomas-reyes",
+      "address": "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC",
+      "name": "Tomas Reyes",
+      "headline": "Front-end developer for small business sites",
+      "bio": "I build fast, accessible sites with plain HTML, CSS and a little JavaScript. No page builders. You get the repository and a short handover note."
+    },
+    {
+      "handle": "priya-nair",
+      "address": "0x90F79bf6EB2c4f870365E785982E1f101E93b906",
+      "name": "Priya Nair",
+      "headline": "Motion designer for product explainers",
+      "bio": "I make short animated explainers for software and hardware products. Script help is included. You receive the project file and exports at 1080p and 4K."
+    }
+  ],
+  "portfolio_items": [
+    {
+      "id": 1,
+      "handle": "ines-varga",
+      "title": "Lumen Coffee identity",
+      "description": "Logo, wordmark and colour system for a three-shop roaster, delivered as SVG with a one-page usage guide.",
+      "tag": "Identity"
+    },
+    {
+      "id": 2,
+      "handle": "ines-varga",
+      "title": "Fieldnote label range",
+      "description": "Six labels for small-batch hot sauce, one die-line and two print-ready colour variants.",
+      "tag": "Packaging"
+    },
+    {
+      "id": 3,
+      "handle": "ines-varga",
+      "title": "Harbor Oat type system",
+      "description": "Type pairing, size scale and spacing rules for an oat-milk brand's web and print work.",
+      "tag": "Typography"
+    },
+    {
+      "id": 4,
+      "handle": "tomas-reyes",
+      "title": "Tidewater Bikes booking site",
+      "description": "Repair booking form with slot picking and email confirmation, built without a framework.",
+      "tag": "Web app"
+    },
+    {
+      "id": 5,
+      "handle": "tomas-reyes",
+      "title": "Okafor Legal site",
+      "description": "Five pages for a two-person law firm, with a contact form and a plain-language practice list.",
+      "tag": "Brochure site"
+    },
+    {
+      "id": 6,
+      "handle": "tomas-reyes",
+      "title": "Pantry docs",
+      "description": "Searchable, keyboard-navigable docs for a recipe API, generated from Markdown.",
+      "tag": "Documentation"
+    },
+    {
+      "id": 7,
+      "handle": "priya-nair",
+      "title": "Kettle app launch film",
+      "description": "A 30-second launch film for a smart-kettle app, with voice-over and captions.",
+      "tag": "Explainer"
+    },
+    {
+      "id": 8,
+      "handle": "priya-nair",
+      "title": "Ledgerline onboarding loops",
+      "description": "Eight looping animations for the onboarding screens of a bookkeeping tool.",
+      "tag": "UI motion"
+    },
+    {
+      "id": 9,
+      "handle": "priya-nair",
+      "title": "Solder & Co logo sting",
+      "description": "A four-second logo sting in three aspect ratios for video and social.",
+      "tag": "Logo animation"
+    }
+  ],
+  "packages": [
+    {
+      "id": 1,
+      "handle": "ines-varga",
+      "name": "Logo starter",
+      "description": "Three logo concepts as SVG. One is refined after your feedback, with a black-and-white version.",
+      "price_credits": 600,
+      "delivery_days": 5,
+      "revisions": 2
+    },
+    {
+      "id": 2,
+      "handle": "ines-varga",
+      "name": "Brand identity",
+      "description": "Logo, colour palette, type pairing and a one-page usage guide, delivered in three milestones.",
+      "price_credits": 1500,
+      "delivery_days": 14,
+      "revisions": 2
+    },
+    {
+      "id": 3,
+      "handle": "tomas-reyes",
+      "name": "Landing page",
+      "description": "One responsive page with a contact form, written in HTML and CSS and deployed to your host.",
+      "price_credits": 900,
+      "delivery_days": 7,
+      "revisions": 2
+    },
+    {
+      "id": 4,
+      "handle": "tomas-reyes",
+      "name": "Five-page site",
+      "description": "Home, about, services, pricing and contact, with a shared layout, a sitemap and an accessibility pass.",
+      "price_credits": 2400,
+      "delivery_days": 14,
+      "revisions": 3
+    },
+    {
+      "id": 5,
+      "handle": "priya-nair",
+      "name": "Social loop pack",
+      "description": "Three looping animations at 1080 square, made from your existing artwork.",
+      "price_credits": 700,
+      "delivery_days": 5,
+      "revisions": 1
+    },
+    {
+      "id": 6,
+      "handle": "priya-nair",
+      "name": "30-second explainer",
+      "description": "Script polish, storyboard, animation, captions and exports at 1080p and 4K.",
+      "price_credits": 1800,
+      "delivery_days": 12,
+      "revisions": 2
+    }
+  ],
+  "commission_requests": [],
+  "blobs": {}
+}

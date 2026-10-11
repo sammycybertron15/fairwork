@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { DM_Sans, JetBrains_Mono, Outfit } from "next/font/google";
 import type { ReactNode } from "react";
+import { DemoWalletBar } from "@/components/DemoWalletBar";
+import { Providers } from "@/components/Providers";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 import "./globals.css";
@@ -24,9 +26,12 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en" className={fontVariables}>
       <body className="flex min-h-screen flex-col bg-canvas font-sans text-ink">
-        <SiteHeader />
-        <main className="mx-auto w-full max-w-6xl flex-1 px-6 py-16">{children}</main>
-        <SiteFooter />
+        <Providers>
+          <DemoWalletBar />
+          <SiteHeader />
+          <main className="mx-auto w-full max-w-6xl flex-1 px-6 py-16">{children}</main>
+          <SiteFooter />
+        </Providers>
       </body>
     </html>
   );

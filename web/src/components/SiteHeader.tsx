@@ -3,7 +3,6 @@ import { ConnectWalletButton } from "./ConnectWalletButton";
 
 const NAV_ITEMS = [
   { href: "/", label: "Storefronts" },
-  { href: "/agreements/new", label: "New agreement" },
   { href: "/dashboard", label: "Dashboard" },
 ] as const;
 
